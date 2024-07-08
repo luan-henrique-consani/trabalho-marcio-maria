@@ -1,0 +1,153 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #d9d7ef;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2023;
+}
+header h1 {
+    margin-top: 0;
+    color: #1f252f;
+}
+
+header nav {
+    width: 40%;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+header nav ul li {
+    text-align: center;
+}
+header nav ul li a {
+    text-decoration: solid;
+    color: #1f252f;
+    font-weight: 700;
+    padding: 15px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+header nav ul li a.ativo {
+    background-color: #c7c5df;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ece8f9;
+}
+section {
+    width: 50%;
+    height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid #57449a;
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 455px;
+    max-height: 245px;
+    margin-bottom: 15px;
+}
+section h3 {
+    font-size: 45px;
+}
+section p {
+    margin: 0;
+    font-size: 30px;
+}
+section #texto4 {
+    font-size: 23px;
+}
+
+@media (max-width: 1200px) {
+    header nav {
+        width: 60%;
+    }
+    section {
+        width: 70%;
+    }
+    section h3 {
+        font-size: 38px;
+    }
+    section p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    header h1 {
+        margin: 10px 0;
+    }
+    header nav {
+        width: 100%;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        width: 90%;
+    }
+    section h3 {
+        font-size: 32px;
+    }
+    section p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: auto;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    header nav ul li a {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+    section {
+        width: 100%;
+        padding: 0 10px;
+    }
+    section h3 {
+        font-size: 28px;
+    }
+    section p {
+        font-size: 18px;
+    }
+}
